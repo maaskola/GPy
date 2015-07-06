@@ -15,7 +15,7 @@ class TruncLinear(Kern):
 
     .. math::
 
-       k(x,y) = \sum_{i=1}^input_dim \sigma^2_i \max(0, x_iy_i - \simga_q)
+       k(x,y) = \sum_{i=1}^input_dim \sigma^2_i \max(0, x_iy_i - \sigma_q)
 
     :param input_dim: the number of input dimensions
     :type input_dim: int
@@ -114,7 +114,7 @@ class TruncLinear_inf(Kern):
 
     .. math::
 
-       k(x,y) = \sum_{i=1}^input_dim \sigma^2_i \max(0, x_iy_i - \simga_q)
+       k(x,y) = \sum_{i=1}^input_dim \sigma^2_i \max(0, x_iy_i - \sigma_q)
 
     :param input_dim: the number of input dimensions
     :type input_dim: int
